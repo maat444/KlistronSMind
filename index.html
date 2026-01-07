@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KlistronSMind - Música Electrónica Psicodélica</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header con logo y navegación -->
+    <header class="header">
+        <div class="container">
+            <div class="logo-container">
+                <img src="images/Electrón.webp" alt="KlistronSMind Logo" class="logo">
+                <h1 class="artist-name">Klistron<span class="neon-text">SMind</span></h1>
+            </div>
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#home" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="#tracks" class="nav-link">Pistas</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">KS'Mind</a></li>
+                <!--    <li class="nav-item"><a href="#contact" class="nav-link">Contacto</a></li> -->
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección Hero -->
+    <section id="home" class="hero">
+        <div class="hero-overlay">
+            <div class="container">
+                <div class="hero-content">
+                    <h2 class="hero-title">Psychedelic and Alien</h2>
+                    <h2 class="hero-title"><span class="neon-text2">Electronic Music</span></h2>
+                    <p class="hero-subtitle">Explora sonidos interdimensionales y ritmos envolventes</p>
+                    <a href="#tracks" class="btn-neon">Escuchar Ahora</a>
+                </div>
+            </div>
+        </div>
+        <div class="psycho-container" id="psycho-container"></div>
+    </section>
+
+    <!-- Sección de Flash Cards con audios -->
+    <section id="tracks" class="tracks-section">
+        <div class="container">
+            <h2 class="section-title">Catálogo <span class="neon-text">en producción</span></h2>
+            <p class="section-subtitle">Haz clic en reproducir para escuchar un sample de cada pista</p>
+            
+            <div class="audio-controls-info">
+                <div class="current-track-info">
+                    <p id="current-track-text">Ninguna pista reproduciéndose</p>
+                    <div class="audio-progress">
+                        <div class="progress-bar" id="progress-bar"></div>
+                    </div>
+                    <div class="time-display">
+                        <span id="current-time">0:00</span> / <span id="total-time">1:30</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cards-container" id="cards-container">
+                <!-- Las tarjetas se generarán dinámicamente desde JavaScript -->
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Sobre KlistronSMind -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Sobre <span class="neon-text">KlistronSMind</span></h2>
+                    <p>KlistronSMind es música electrónica de una escena underground. Su sonido se caracteriza por la fusión de elementos psicodélicos y atmosféricos.</p>
+                    <p>Cada producción es un viaje sónico diseñado para expandir la conciencia y transportar al oyente a dimensiones sonoras inexploradas. Experiencias inmersivas que combinan visuales psicodélicos con ritmos complejos y envolventes.</p>
+                    
+                    <div class="social-links">
+                    <!--    <a href="https://soundcloud.com" target="_blank" class="social-link soundcloud">
+                            <i class="fab fa-soundcloud"></i> SoundCloud
+                        </a>
+                        <a href="https://spotify.com" target="_blank" class="social-link spotify">
+                            <i class="fab fa-spotify"></i> Spotify
+                        </a>
+                        <a href="https://youtube.com" target="_blank" class="social-link youtube">
+                            <i class="fab fa-youtube"></i> YouTube
+                        </a>
+                        <a href="https://instagram.com" target="_blank" class="social-link instagram">
+                            <i class="fab fa-instagram"></i> Instagram
+                        </a>  -->
+                        <a href="https://www.patreon.com/c/KlistronSMind" target="_blank" class="social-link patreon">
+                            <i class="fab fa-patreon"></i> Patreon
+                        </a>
+                    <!--    <a href="mailto:klistronsmind@gmail.com" class="social-link email">
+                            <i class="fas fa-envelope"></i> Email -->
+                        </a>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-frame">
+                        <div class="psycho-frame" id="about-psycho"></div>                        
+                    </div>
+                    <p class="about-text" style="text-align: center;">
+                        Encuentra las pistas completas en <a href="https://www.patreon.com/c/KlistronSMind" target="_blank" class="patreon-link" style="text-shadow: 0 0 5px #ff00de;">Patreon</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/Electrón.webp" alt="KlistronSMind Logo" class="logo">
+                    <h3 class="artist-name">Klistron<span class="neon-text">SMind</span></h3>
+                </div>
+                <div class="footer-info">
+                    <p>Música electrónica psicodélica con visuales inmersivos.</p>
+                    <p class="copyright">© <span id="current-year"></span> KlistronSMind. Todos los derechos reservados.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Inicio</a> | 
+                    <a href="#tracks">Pistas</a> | 
+                    <a href="#about">KS'Mind</a>
+                <!--    <a href="#contact">Contacto</a> -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
